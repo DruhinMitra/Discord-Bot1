@@ -37,11 +37,27 @@ async def on_message(message):
 @app_commands.describe(p="Topics of physics")
 @app_commands.describe(m="Topics of Maths")
 @app_commands.describe(c="Topics of Chemistry")
-@app_commands.describe(t="Enter the time")
+@app_commands.describe(t="Enter the time(in hours)")
+async def assignment(Intr,p:str,m:str,c:str,t:str):
+    tasks = [p, c, m]
+    if tasks:
+        print(p,c,m)
+      
+        await Intr.response.send_message(f'Your to-do list:\n{tasks}\n complete it under {t}')
+    else:
+        print("empty")
+      
+        await Intr.response.send_message('Your to-do list is empty!')
 
-async def assingment(Intr,p:str,c:str,m:str,t:str):                           # This function will take assingment and the alloted time from user
-    await Intr.response.send_message("Okay... all the best")
+    # await Intr.response.send_message("ALL THE BEST....")
     
+    
+
+
+
+
+
+
     
 bot.run(TOKEN)
     
