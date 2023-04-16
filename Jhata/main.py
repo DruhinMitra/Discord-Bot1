@@ -1,7 +1,7 @@
 import discord 
 from discord import app_commands
 from discord.ext import commands
-TOKEN='MTA5NjY3MTE1MDIxMTMzNDE3NA.GJr7YR.AepsGTNE4ozuiMDSO_ddGo2J9UkNoBKJ6tV5nQ'
+TOKEN=''
 
 # added test comment
 
@@ -39,7 +39,7 @@ async def on_message(message):
 @app_commands.describe(c="Topics of Chemistry")
 @app_commands.describe(t="Enter the time")
 
-async def assingment(Intr,p:str,c:str,m:str):                           # This function will take assingment and the alloted time from user
+async def assingment(Intr,p:str,c:str,m:str,t:str):                           # This function will take assingment and the alloted time from user
     await Intr.response.send_message("Okay... all the best")
     
     
