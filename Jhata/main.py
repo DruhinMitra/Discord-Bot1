@@ -1,7 +1,7 @@
 import discord 
 from discord import app_commands
 from discord.ext import commands
-TOKEN='MTA5NjY3MTE1MDIxMTMzNDE3NA.G95T1W.p5iRLSO9undvwkvK_eO3D_5BBoOw-1wVDLMMEU'
+TOKEN='MTA5NjY3MTE1MDIxMTMzNDE3NA.GJr7YR.AepsGTNE4ozuiMDSO_ddGo2J9UkNoBKJ6tV5nQ'
 
 # added test comment
 
@@ -40,13 +40,7 @@ async def on_message(message):
 
 
 async def assingment(Intr,p:str,c:str,m:str):                           # This function will take assingment and the alloted time from user
-    try:
-        await Intr.response.send_message(p)
-        await Intr.response.send_message(m)
-        await Intr.response.send_message(c)
-    except Exception as e:
-        print("error",e)
-    
+    await Intr.response.send_message("Okay... all the best")
     
     
 bot.run(TOKEN)
