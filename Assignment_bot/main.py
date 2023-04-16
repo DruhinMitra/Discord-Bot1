@@ -19,7 +19,7 @@ async def on_ready():
         
 @bot.tree.command(name='suckmypp')
 async def suckmypp(Intr):
-    await Intr.response.send_message('GWAK GWAK 3000')
+    await Intr.response.send_message('GWAK GWAK X3000')
 
 @bot.event    
 async def on_message(message):
@@ -41,7 +41,7 @@ async def on_message(message):
 async def assignment(Intr,p:str,m:str,c:str,t:str):
     tasks = [p, c, m]
     if tasks:
-        print(p,c,m)
+        
       
         await Intr.response.send_message(f'Your to-do list:\n{tasks}\n complete it under {t}')
     else:
@@ -49,7 +49,7 @@ async def assignment(Intr,p:str,m:str,c:str,t:str):
       
         await Intr.response.send_message('Your to-do list is empty!')
 
-    # await Intr.response.send_message("ALL THE BEST....")
+    
     
     
 
