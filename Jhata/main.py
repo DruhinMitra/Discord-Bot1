@@ -34,10 +34,10 @@ async def on_message(message):
 # @bot.event
 
 @bot.tree.command(name='assingment')
-@app_commands.describe(p="Topics of physics: ")
-@app_commands.describe(m="Topics of Maths: ")
-@app_commands.describe(c="Topics of Chemistry: ")
-
+@app_commands.describe(p="Topics of physics")
+@app_commands.describe(m="Topics of Maths")
+@app_commands.describe(c="Topics of Chemistry")
+@app_commands.describe(t="Enter the time")
 
 async def assingment(Intr,p:str,c:str,m:str):                           # This function will take assingment and the alloted time from user
     await Intr.response.send_message("Okay... all the best")
