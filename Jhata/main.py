@@ -3,7 +3,7 @@ from discord import app_commands
 from discord.ext import commands
 TOKEN='MTA5NjY3MTE1MDIxMTMzNDE3NA.G95T1W.p5iRLSO9undvwkvK_eO3D_5BBoOw-1wVDLMMEU'
 
-
+# added test comment
 
 bot=commands.Bot(command_prefix='/',intents=discord.Intents.all())
 
